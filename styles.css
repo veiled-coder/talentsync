@@ -315,10 +315,39 @@ blockquote span {
 }
 .faq-container {
   padding: 3rem;
+  border-bottom: 1px solid #eaecf0;
   border-radius: 1rem;
 }
 .faq1-container {
   background-color: #eaecf0;
+}
+/* TRIAL SECTION STYLES */
+.trial-section {
+  display: flex;
+}
+.trial-section div {
+  flex: 1;
+}
+.trial-section1 p {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  line-height: 2;
+}
+.trial-section1 p img {
+  width: 2rem;
+  margin-right: 1rem;
+}
+.trial-btns {
+  margin-top: 3rem;
+}
+.trial-section2 {
+  width: 50%;
+}
+.trial-section2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 /* COMMON STYLES */
 a {
@@ -355,6 +384,10 @@ button {
 .common-margin {
   margin: 12rem 8rem;
 }
+
+.common-padding {
+  padding: 12rem 0rem 12rem 8rem;
+}
 .logo {
   width: 14rem;
 }
@@ -367,17 +400,10 @@ h2 {
   font-size: 3rem;
   margin: 1.5rem 0;
 }
-hr{
-  border: 1px solid #EAECF0;
-  margin-top: 2rem;
+h2 span {
+  display: block;
 }
-.faq-section{
-  flex-direction: column;
-}
-.faq-section1,
-.faq-section2,.faq-text {
-  width: 100%;
-}
+
 /* media queries */
 @media (max-width: 925px) {
   nav .nav-links {
@@ -418,6 +444,9 @@ hr{
   .common-margin {
     margin: 6rem 4rem;
   }
+  .common-padding {
+    padding: 6rem 0rem 6rem 4rem;
+  }
   .testimonial-section {
     padding: 6rem 4rem;
   }
@@ -457,11 +486,26 @@ hr{
     flex-direction: column-reverse;
   }
   .testimonial-section1,
-  .testimonial-gallery {
+  .testimonial-gallery,
+  .trial-section2 {
     width: 100%;
   }
-  .testimonial-gallery {
+  .testimonial-gallery,
+  .trial-section1 {
     margin-bottom: 2rem;
+  }
+
+  .faq-section,
+  .trial-section {
+    flex-direction: column;
+  }
+  .faq-section1,
+  .faq-section2,
+  .faq-text {
+    width: 100%;
+  }
+  h2 span {
+    display: inline;
   }
 }
 @media (max-width: 768px) {
@@ -492,6 +536,9 @@ hr{
   }
   .common-margin {
     margin: 4rem 2rem;
+  }
+  .common-padding {
+    padding: 4rem 0rem 4rem 2rem;
   }
   .testimonial-section {
     padding: 4rem 2rem;
