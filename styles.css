@@ -295,10 +295,45 @@ blockquote span {
   height: 100%;
   object-fit: cover;
 }
-
+/* FAQ STYLES*/
+.faq-section {
+  display: flex;
+}
+.faq-section1,
+.faq-section2 {
+  width: 50%;
+}
+.faq-text {
+  color: #667085;
+  width: 80%;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.faq-ans {
+  font-size: 1.2rem;
+  width: 90%;
+}
+.faq-container {
+  padding: 3rem;
+  border-radius: 1rem;
+}
+.faq1-container {
+  background-color: #eaecf0;
+}
 /* COMMON STYLES */
 a {
   text-decoration: none;
+}
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+h3 img {
+  width: 1.5rem;
 }
 button {
   padding: 1em 2em;
@@ -331,6 +366,17 @@ button {
 h2 {
   font-size: 3rem;
   margin: 1.5rem 0;
+}
+hr{
+  border: 1px solid #EAECF0;
+  margin-top: 2rem;
+}
+.faq-section{
+  flex-direction: column;
+}
+.faq-section1,
+.faq-section2,.faq-text {
+  width: 100%;
 }
 /* media queries */
 @media (max-width: 925px) {
