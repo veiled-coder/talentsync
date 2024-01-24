@@ -349,6 +349,46 @@ blockquote span {
   height: 100%;
   object-fit: cover;
 }
+/* FOOTER SECTION STYLES */
+footer {
+  font-size: 1.5rem;
+  color: #475467;
+}
+.footer-section1 {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-links-main {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.long-text-container {
+  width: 35%;
+}
+.footer-longtext {
+  margin-top: 2rem;
+}
+.footer-longtext span {
+  display: block;
+}
+.footer-heading {
+  margin-bottom: 1.5rem;
+  color: #667085;
+}
+.footer-link {
+  color: #475467;
+  display: block;
+  margin-top: 1.5rem;
+}
+.footer-links-container {
+  font-weight: 600;
+}
+.get-app {
+  color: #004eeb;
+}
 /* COMMON STYLES */
 a {
   text-decoration: none;
@@ -381,7 +421,8 @@ button {
   color: white;
 }
 
-.common-margin {
+.common-margin,
+.footer-padding {
   margin: 12rem 8rem;
 }
 
@@ -441,7 +482,8 @@ h2 span {
   .review-container {
     margin-bottom: 2rem;
   }
-  .common-margin {
+  .common-margin,
+  .footer-padding {
     margin: 6rem 4rem;
   }
   .common-padding {
@@ -507,6 +549,18 @@ h2 span {
   h2 span {
     display: inline;
   }
+  .footer-section1 {
+    flex-direction: column;
+  }
+  
+ 
+  .footer-links-container {
+    margin-bottom: 3rem;
+  }
+  .long-text-container {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
 }
 @media (max-width: 768px) {
   nav {
@@ -534,7 +588,8 @@ h2 span {
   h1 {
     font-size: 3rem;
   }
-  .common-margin {
+  .common-margin,
+  .footer-padding {
     margin: 4rem 2rem;
   }
   .common-padding {
@@ -546,6 +601,4 @@ h2 span {
   .testimonial-gallery {
     grid-template-rows: repeat(12, 4vw);
   }
-}
-@media (max-width: 375px) {
 }
